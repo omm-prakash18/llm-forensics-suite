@@ -69,42 +69,27 @@ const DatasetBuilder = () => {
   };
 
   const generateSample = async (topic, selectedModel, textType, lengthTargetLabel) => {
-    const lengthRange = LENGTHS.find(l => l.label === lengthTargetLabel).range;
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("http://127.0.0.1:8000/generate", {
         method: "POST",
         headers: { 
-          "Content-Type": "application/json",
-          "x-api-key": "REPLACE_WITH_YOUR_KEY",
-          "anthropic-version": "2023-06-01",
-          "dangerouslyAllowBrowser": "true" 
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          model: "claude-sonnet-4-20250514",
-          max_tokens: 1000,
-          messages: [{
-            role: "user",
-            content: `${SYSTEM_PROMPTS[selectedModel]}\n\nWrite a ${lengthRange} word ${textType} about: "${topic}". Return only the text, no preamble, no labels, no explanation.`
-          }]
+          model_label: selectedModel,
+          topic: topic,
+          text_type: textType,
+          length_target: lengthTargetLabel
         })
       });
 
-      if (!response.ok) throw new Error(`API Error: ${response.statusText}`);
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.detail || `Server Error: ${response.statusText}`);
+      }
       
-      const data = await response.json();
-      const generatedText = data.content[0].text;
-
-      return {
-        id: crypto.randomUUID(),
-        model_label: selectedModel,
-        topic: topic,
-        text_type: textType,
-        length_target: lengthTargetLabel,
-        text: generatedText,
-        word_count: generatedText.split(/\s+/).filter(Boolean).length,
-        char_count: generatedText.length,
-        timestamp: new Date().toISOString(),
-      };
+      const sample = await response.json();
+      return sample;
     } catch (error) {
       showToast(`Generation failed: ${error.message}`);
       return null;
