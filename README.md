@@ -1,57 +1,93 @@
-# LLM Forensics Suite 🕵️‍♂️
+# 🕵️‍♂️ LLM Forensics Suite
 
-A comprehensive stylometric analysis and model attribution framework designed to identify the "fingerprints" of various Large Language Models. This suite provides tools for forensic data scientists to detect, analyze, and simulate LLM-specific writing patterns.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![React](https://img.shields.io/badge/frontend-React-61dafb.svg)](https://reactjs.org/)
+[![FastAPI](https://img.shields.io/badge/backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 
-## 🚀 Features
+A professional-grade **Stylometric Analysis & Model Attribution** framework. This suite detects the subtle "digital fingerprints" left by Large Language Models (LLMs) to identify the likely source of any given text with high precision.
 
-- **Model Attribution:** Identify the likely source of text among major models including **GPT-4, Claude, Gemini, LLaMA, and Mistral**.
-- **Lexical Signal Extraction:** Analyzes over 20+ stylometric features such as em-dash frequency, hedging density, Oxford comma usage, and structural complexity.
-- **Explainable Forensics:** Not just a classification—provides specific "Key Signals" and reasoning for why a model was selected.
-- **Style Simulation:** Generate synthetic text samples that mimic the characteristic "voice" of specific LLMs for dataset building and testing.
-- **Live Dashboard:** A modern, React-based UI for real-time text analysis and signal visualization.
+---
 
-## 🛠️ Tech Stack
+## 🌟 Key Capabilities
 
-- **Backend:** FastAPI (Python)
-- **Forensics Engine:** Lexical pattern matching + Claude 3.5 Sonnet (Hybrid Analysis)
-- **Frontend:** React, Vite, Framer Motion, Tailwind CSS (Vanilla CSS variants)
-- **Stylometrics:** Custom feature extraction engine in `feature_extraction.py`
+### 🔍 Forensic Attribution
+Identify the likely authoring model among:
+- **OpenAI:** GPT-4, GPT-3.5
+- **Anthropic:** Claude 3 (Opus/Sonnet/Haiku)
+- **Google:** Gemini Pro/Ultra
+- **Meta:** LLaMA 3, LLaMA 2
+- **Mistral AI:** Mistral-7B, Mixtral
 
-## 📦 Installation
+### 📊 Signal Extraction
+The engine extracts **20+ diagnostic features** including:
+- **Lexical Density:** Vocabulary richness and word-choice patterns.
+- **Punctuation Signatures:** Precise tracking of em-dashes, Oxford commas, and ellipsis usage.
+- **Structural Cues:** Analysis of markdown usage, list formatting, and header styles.
+- **Syntactic Profiling:** Sentence length variance and subordinate clause complexity.
 
-### Backend
-1. Navigate to the `llm_classifier` directory.
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Set your Anthropic API Key (optional for fallback mode):
-   ```bash
-   export ANTHROPIC_API_KEY='your_key_here'
-   ```
-4. Run the API:
-   ```bash
-   python src/app.py
-   ```
+### 🎭 Style Simulation
+Generate forensic "gold standards" by simulating the specific writing styles of target models to build robust training datasets.
 
-### Frontend
-1. Navigate to `llm_classifier/frontend`.
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
+---
 
-## 🔍 How it Works
+## 🚀 Getting Started
 
-The suite uses a hybrid approach to classification:
-1. **Structural Analysis:** Measures markdown usage, list density, and header styles.
-2. **Syntactic Profiling:** Tracks sentence length variance, subordinate clause ratios, and transition patterns.
-3. **Lexical Fingerprinting:** Identifies model-specific "crutches" (e.g., Claude's use of em-dashes vs. GPT-4's pedagogical structure).
+### Backend Setup (FastAPI)
+```bash
+# Navigate to backend
+cd llm_classifier
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Start the server
+uvicorn src.app:app --reload
+```
+
+### Frontend Setup (React + Vite)
+```bash
+# Navigate to frontend
+cd llm_classifier/frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React 18, Vite, Framer Motion, Lucide Icons |
+| **Backend** | FastAPI, Uvicorn, Pydantic |
+| **Analysis** | NumPy, Python Stylometrics Engine |
+| **AI Integration** | Claude 3.5 Sonnet (Hybrid Analysis Mode) |
+
+---
+
+## 🧠 How the Forensics Engine Works
+
+The suite utilizes a **Hybrid Detection Strategy**:
+
+1. **Heuristic Layer:** A rule-based engine that scores text based on known model behaviors (e.g., Claude's affinity for em-dashes or Gemini's structured bolding).
+2. **LLM Analysis Layer:** Leverages high-reasoning models to analyze nuance, tone, and "voice" that static rules might miss.
+3. **Probability Mapping:** Generates a confidence-weighted score across all supported models.
+
+---
+
+## 📈 Roadmap
+- [ ] Support for fine-tuned versions of LLaMA/Mistral.
+- [ ] Exportable forensic reports (PDF/JSON).
+- [ ] Batch processing for large document datasets.
+- [ ] Chrome Extension for one-click web text analysis.
 
 ## 📄 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
-MIT
+---
+*Created for forensic data scientists and AI safety researchers.*
