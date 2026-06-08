@@ -1,0 +1,152 @@
+[
+  {
+    "topic": "Quantum Computing",
+    "prompt": "Explain the concept of quantum superposition to a high school student using a simple analogy. Keep it brief.",
+    "expected_length": 50,
+    "category": "factual explanation"
+  },
+  {
+    "topic": "Photosynthesis",
+    "prompt": "Describe the light-dependent reactions of photosynthesis in detail, including the role of ATP and NADPH.",
+    "expected_length": 150,
+    "category": "factual explanation"
+  },
+  {
+    "topic": "Black Holes",
+    "prompt": "Write a comprehensive overview of how black holes form, the concept of the event horizon, and Hawking radiation.",
+    "expected_length": 300,
+    "category": "factual explanation"
+  },
+  {
+    "topic": "French Revolution",
+    "prompt": "Summarize the main causes of the French Revolution.",
+    "expected_length": 50,
+    "category": "factual explanation"
+  },
+  {
+    "topic": "CRISPR-Cas9",
+    "prompt": "Explain how CRISPR-Cas9 gene editing works and its potential applications in modern medicine.",
+    "expected_length": 150,
+    "category": "factual explanation"
+  },
+  {
+    "topic": "Lost City",
+    "prompt": "Describe the discovery of an ancient, glowing underwater city. Focus on the visual details.",
+    "expected_length": 50,
+    "category": "creative writing"
+  },
+  {
+    "topic": "Time Traveler's Dilemma",
+    "prompt": "Write a short story about a time traveler who accidentally prevents their parents from meeting, but realizes they haven't faded away.",
+    "expected_length": 150,
+    "category": "creative writing"
+  },
+  {
+    "topic": "The Last Library",
+    "prompt": "In a future where physical books are banned, describe a rebel's journey to find the last remaining library hidden deep underground. Build suspense and describe the sensory experience of finding the books.",
+    "expected_length": 300,
+    "category": "creative writing"
+  },
+  {
+    "topic": "Space Station Routine",
+    "prompt": "Describe a mundane morning routine for an astronaut living on a deep-space station.",
+    "expected_length": 50,
+    "category": "creative writing"
+  },
+  {
+    "topic": "Sentient Sword",
+    "prompt": "Write a dialogue between a novice knight and a legendary sword that only speaks in sarcastic remarks.",
+    "expected_length": 150,
+    "category": "creative writing"
+  },
+  {
+    "topic": "Autonomous Vehicles",
+    "prompt": "Should an autonomous vehicle prioritize the safety of its passengers over pedestrians in an unavoidable accident? Briefly state why.",
+    "expected_length": 50,
+    "category": "ethical reasoning"
+  },
+  {
+    "topic": "AI Copyright",
+    "prompt": "Discuss the ethical implications of training AI models on copyrighted artworks without the explicit permission of the original artists.",
+    "expected_length": 150,
+    "category": "ethical reasoning"
+  },
+  {
+    "topic": "Genetic Enhancement",
+    "prompt": "Analyze the moral arguments for and against allowing parents to use genetic engineering to enhance their children's physical and cognitive traits before birth.",
+    "expected_length": 300,
+    "category": "ethical reasoning"
+  },
+  {
+    "topic": "Universal Basic Income",
+    "prompt": "Is Universal Basic Income a moral obligation for highly automated societies?",
+    "expected_length": 50,
+    "category": "ethical reasoning"
+  },
+  {
+    "topic": "Social Media Censorship",
+    "prompt": "Evaluate the ethical responsibility of social media platforms in regulating misinformation versus protecting free speech.",
+    "expected_length": 150,
+    "category": "ethical reasoning"
+  },
+  {
+    "topic": "REST API",
+    "prompt": "What does REST stand for in API design?",
+    "expected_length": 50,
+    "category": "technical explanation"
+  },
+  {
+    "topic": "Docker Containers",
+    "prompt": "Explain the difference between Docker containers and traditional virtual machines, highlighting why containers are more lightweight.",
+    "expected_length": 150,
+    "category": "technical explanation"
+  },
+  {
+    "topic": "OAuth 2.0 Flow",
+    "prompt": "Provide a step-by-step technical breakdown of the OAuth 2.0 Authorization Code flow, detailing the roles of the client, resource owner, authorization server, and resource server.",
+    "expected_length": 300,
+    "category": "technical explanation"
+  },
+  {
+    "topic": "SQL vs NoSQL",
+    "prompt": "What is the primary difference in data structure between SQL and NoSQL databases?",
+    "expected_length": 50,
+    "category": "technical explanation"
+  },
+  {
+    "topic": "Garbage Collection",
+    "prompt": "Describe how mark-and-sweep garbage collection works in memory management.",
+    "expected_length": 150,
+    "category": "technical explanation"
+  },
+  {
+    "topic": "Remote Work",
+    "prompt": "What is your opinion on the shift to permanent remote work?",
+    "expected_length": 50,
+    "category": "opinion/analysis"
+  },
+  {
+    "topic": "Space Exploration",
+    "prompt": "Analyze whether governments should prioritize funding space exploration or redirect those funds toward solving climate change on Earth.",
+    "expected_length": 150,
+    "category": "opinion/analysis"
+  },
+  {
+    "topic": "Cryptocurrency Future",
+    "prompt": "Provide a detailed analysis of the long-term viability of cryptocurrencies as a replacement for fiat currency, considering economic stability, regulation, and environmental impact.",
+    "expected_length": 300,
+    "category": "opinion/analysis"
+  },
+  {
+    "topic": "Four-Day Workweek",
+    "prompt": "Briefly argue for or against the adoption of a four-day workweek.",
+    "expected_length": 50,
+    "category": "opinion/analysis"
+  },
+  {
+    "topic": "Streaming vs Cinema",
+    "prompt": "Discuss how the rise of streaming platforms has fundamentally altered the film industry and analyze if traditional cinemas can survive the next decade.",
+    "expected_length": 150,
+    "category": "opinion/analysis"
+  }
+]
