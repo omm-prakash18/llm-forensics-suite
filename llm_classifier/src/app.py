@@ -67,26 +67,37 @@ def rule_based_scoring(features):
     probs = softmax(list(scores.values()))
     return {name: float(p) for name, p in zip(scores.keys(), probs)}
 
-def call_claude_api(system_prompt, user_message, json_mode=True):
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+def call_gemini_api(system_prompt, user_message, json_mode=True):
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key: return None
     try:
+        # Gemini expects a combined prompt or system instruction
+        combined_prompt = f"{system_prompt}\n\nUser request: {user_message}"
+        
         response = requests.post(
-            "https://api.anthropic.com/v1/messages",
-            headers={"x-api-key": api_key, "anthropic-version": "2023-06-01", "content-type": "application/json"},
+            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}",
+            headers={"Content-Type": "application/json"},
             json={
-                "model": "claude-3-5-sonnet-20240620",
-                "max_tokens": 1024,
-                "system": system_prompt,
-                "messages": [{"role": "user", "content": user_message}]
+                "contents": [{
+                    "parts": [{"text": combined_prompt}]
+                }],
+                "generationConfig": {
+                    "response_mime_type": "application/json" if json_mode else "text/plain"
+                }
             },
-            timeout=12
+            timeout=15
         )
+        
         if response.status_code == 200:
-            text = response.json()["content"][0]["text"]
+            data = response.json()
+            text = data["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text) if json_mode else text
+        else:
+            print(f"Gemini API Error: {response.status_code} - {response.text}")
+            return None
+    except Exception as e:
+        print(f"Gemini API Exception: {str(e)}")
         return None
-    except: return None
 
 @app.post("/classify")
 def classify_text(request: ClassifyRequest):
@@ -98,7 +109,7 @@ def classify_text(request: ClassifyRequest):
     system_prompt = "You are an expert in LLM stylometrics. You will receive a feature analysis dict and raw text. Your job: determine which AI model most likely wrote this text. Be specific about which signals are most diagnostic. Return ONLY valid JSON."
     user_message = f"Feature analysis: {json.dumps(features)}\nRaw text (first 800 chars): {text[:800]}\nReturn JSON format: {{winner: string, confidence: float 0-1, scores: {{GPT-4: float, Claude: float, Gemini: float, LLaMA: float, Mistral: float}}, top_signals: [string, string, string], reasoning: string (2 sentences max)}}"
     
-    result = call_claude_api(system_prompt, user_message)
+    result = call_gemini_api(system_prompt, user_message)
     if result: return result
     
     # Fallback
@@ -126,7 +137,7 @@ def generate_sample(request: GenerateRequest):
     system_prompt = prompts.get(request.model_label, prompts["GPT-4"])
     user_message = f"Write a {request.text_type} about '{request.topic}'. Length: {request.length_target}. Provide ONLY the text, no conversational filler."
     
-    text = call_claude_api(system_prompt, user_message, json_mode=False)
+    text = call_gemini_api(system_prompt, user_message, json_mode=False)
     if not text: raise HTTPException(500, "Generation failed.")
     
     return {
@@ -151,7 +162,7 @@ def get_recommendations(request: dict):
     matrix = request.get("confusion_matrix")
     weights = request.get("feature_weights")
     
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return [
             {"pair": "GPT-4 ↔ Claude", "reason": "Shared formal tone and hedging.", "fix": "Increase em-dash weight.", "gain": 4},
@@ -162,5 +173,5 @@ def get_recommendations(request: dict):
     system_prompt = "You are a forensic data scientist. Analyze the confusion matrix and feature weights provided to identify the top 3 most impactful improvements to reduce misclassification. Return ONLY a JSON array: [{pair, reason, fix, gain}]"
     user_message = f"Confusion Matrix: {json.dumps(matrix)}\nFeature Weights: {json.dumps(weights)}"
     
-    result = call_claude_api(system_prompt, user_message)
+    result = call_gemini_api(system_prompt, user_message)
     return result if result else []
