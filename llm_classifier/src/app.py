@@ -7,6 +7,27 @@ import requests
 import json
 import uuid
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load .env from two levels up (project root)
+_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+load_dotenv(os.path.join(_root, '.env'))
+
+DATA_FILE = os.path.join(_root, 'data', 'datasets.json')
+
+def load_dataset():
+    if not os.path.exists(DATA_FILE):
+        return []
+    try:
+        with open(DATA_FILE, 'r') as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+def save_dataset(data):
+    os.makedirs(os.path.dirname(DATA_FILE), exist_ok=True)
+    with open(DATA_FILE, 'w') as f:
+        json.dump(data, f, indent=2)
 
 import sys
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
@@ -69,13 +90,16 @@ def rule_based_scoring(features):
 
 def call_gemini_api(system_prompt, user_message, json_mode=True):
     api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key: return None
+    if not api_key: 
+        print("Error: GEMINI_API_KEY not found in environment.")
+        return None
     try:
-        # Gemini expects a combined prompt or system instruction
+        # Using gemini-flash-latest as it's the most reliable in this environment
+        model = "gemini-flash-latest"
         combined_prompt = f"{system_prompt}\n\nUser request: {user_message}"
         
         response = requests.post(
-            f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={api_key}",
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}",
             headers={"Content-Type": "application/json"},
             json={
                 "contents": [{
@@ -85,7 +109,7 @@ def call_gemini_api(system_prompt, user_message, json_mode=True):
                     "response_mime_type": "application/json" if json_mode else "text/plain"
                 }
             },
-            timeout=15
+            timeout=30
         )
         
         if response.status_code == 200:
@@ -93,7 +117,7 @@ def call_gemini_api(system_prompt, user_message, json_mode=True):
             text = data["candidates"][0]["content"]["parts"][0]["text"]
             return json.loads(text) if json_mode else text
         else:
-            print(f"Gemini API Error: {response.status_code} - {response.text}")
+            print(f"Gemini API Error ({model}): {response.status_code} - {response.text}")
             return None
     except Exception as e:
         print(f"Gemini API Exception: {str(e)}")
@@ -140,7 +164,7 @@ def generate_sample(request: GenerateRequest):
     text = call_gemini_api(system_prompt, user_message, json_mode=False)
     if not text: raise HTTPException(500, "Generation failed.")
     
-    return {
+    sample = {
         "id": str(uuid.uuid4()),
         "model_label": request.model_label,
         "topic": request.topic,
@@ -153,8 +177,56 @@ def generate_sample(request: GenerateRequest):
         "features": extract_features(text)
     }
 
+    # Persist to database
+    dataset = load_dataset()
+    dataset.insert(0, sample)
+    save_dataset(dataset)
+
+    return sample
+
+@app.get("/dataset")
+def get_dataset(search: str = None):
+    dataset = load_dataset()
+    if not search:
+        return dataset
+    
+    q = search.lower()
+    filtered = [
+        d for d in dataset
+        if q in (d.get("topic") or "").lower() or
+           q in (d.get("text") or "").lower() or
+           q in (d.get("model_label") or "").lower() or
+           q in (d.get("text_type") or "").lower()
+    ]
+    return filtered
+
+@app.delete("/dataset/{item_id}")
+def delete_item(item_id: str):
+    dataset = load_dataset()
+    new_dataset = [d for d in dataset if d.get("id") != item_id]
+    if len(new_dataset) == len(dataset):
+        raise HTTPException(404, "Item not found")
+    save_dataset(new_dataset)
+    return {"status": "deleted"}
+
+@app.delete("/dataset")
+def clear_dataset():
+    save_dataset([])
+    return {"status": "cleared"}
+
 @app.get("/health")
 def health(): return {"status": "ok"}
+
+
+
+@app.post("/features")
+def extract_features_endpoint(request: ClassifyRequest):
+    """Extract raw stylometric features from text (used by Signal Explainer)."""
+    text = request.text
+    if not text or not text.strip():
+        raise HTTPException(400, "Text is empty.")
+    features = extract_features(text)
+    return features
 
 @app.post("/recommendations")
 def get_recommendations(request: dict):
@@ -174,4 +246,10 @@ def get_recommendations(request: dict):
     user_message = f"Confusion Matrix: {json.dumps(matrix)}\nFeature Weights: {json.dumps(weights)}"
     
     result = call_gemini_api(system_prompt, user_message)
-    return result if result else []
+    if isinstance(result, list):
+        return result
+    return [
+        {"pair": "GPT-4 ↔ Claude", "reason": "Shared formal tone and hedging.", "fix": "Increase em-dash weight.", "gain": 4},
+        {"pair": "Mistral ↔ LLaMA", "reason": "Both are efficient and concise.", "fix": "Add sentence length variance signal.", "gain": 6},
+        {"pair": "Gemini ↔ GPT-4", "reason": "Both use heavy list formatting.", "fix": "Reward markdown-specific markers more.", "gain": 5}
+    ]

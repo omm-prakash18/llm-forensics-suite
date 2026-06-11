@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Info, Fingerprint, Zap, Search, Activity, Target } from 'lucide-react';
+import axios from 'axios';
 
 const SIGNALS = [
   { id: 'em_dash_rate', name: 'Em dash rate', desc: 'Claude uses ~4x more em dashes than any other model' },
@@ -24,11 +25,11 @@ const REF_VALUES = {
 };
 
 const DNA_CARDS = [
-  { model: 'GPT-4', color: '#10a37f', phrase: "It's worth noting that we should break this down...", strong: ['Numbered steps', 'Hedging', 'Oxford commas'], confused: 'Claude (Shared formal tone)', score: 82 },
-  { model: 'Claude', color: '#7c5cfc', phrase: "The journey through this topic is one of nuance\u2014and ambiguity.", strong: ['Em dashes', 'Sentence variance', 'Parentheticals'], confused: 'GPT-4 (Both highly formal)', score: 79 },
-  { model: 'Gemini', color: '#4285f4', phrase: "# Key Takeaways\n**Technical efficiency** is priority.", strong: ['Markdown Bold', 'Bullet points', 'Headers'], confused: 'GPT-4 (Shared structure)', score: 86 },
-  { model: 'LLaMA', color: '#ff6b35', phrase: "Look, quantum stuff is just about how particles interact.", strong: ['Directness', 'Casual register', 'Short sentences'], confused: 'Mistral (Both efficient)', score: 91 },
-  { model: 'Mistral', color: '#f7c948', phrase: "This technical implementation ensures optimal stability.", strong: ['Technical density', 'Conciseness', 'Precise wording'], confused: 'LLaMA (Shared efficiency)', score: 74 }
+  { model: 'GPT-4', color: '#b8f5a0', phrase: "It's worth noting that we should break this down...", strong: ['Numbered steps', 'Hedging', 'Oxford commas'], confused: 'Claude (Shared formal tone)', score: 82 },
+  { model: 'Claude', color: '#d4b0ff', phrase: "The journey through this topic is one of nuance\u2014and ambiguity.", strong: ['Em dashes', 'Sentence variance', 'Parentheticals'], confused: 'GPT-4 (Both highly formal)', score: 79 },
+  { model: 'Gemini', color: '#94c7ff', phrase: "# Key Takeaways\n**Technical efficiency** is priority.", strong: ['Markdown Bold', 'Bullet points', 'Headers'], confused: 'GPT-4 (Shared structure)', score: 86 },
+  { model: 'LLaMA', color: '#ffaa6b', phrase: "Look, quantum stuff is just about how particles interact.", strong: ['Directness', 'Casual register', 'Short sentences'], confused: 'Mistral (Both efficient)', score: 91 },
+  { model: 'Mistral', color: '#ffe07a', phrase: "This technical implementation ensures optimal stability.", strong: ['Technical density', 'Conciseness', 'Precise wording'], confused: 'LLaMA (Shared efficiency)', score: 74 }
 ];
 
 const RadarChart = ({ data, size = 300 }) => {
@@ -47,14 +48,12 @@ const RadarChart = ({ data, size = 300 }) => {
 
   return (
     <svg width={size} height={size} style={{ overflow: 'visible' }}>
-      {/* Grid */}
       {[0.2, 0.4, 0.6, 0.8, 1].map(r => (
-        <circle key={r} cx={center} cy={center} r={radius * r} fill="none" stroke="rgba(255,255,255,0.05)" />
+        <circle key={r} cx={center} cy={center} r={radius * r} fill="none" stroke="rgba(255,253,242,0.06)" />
       ))}
       {SIGNALS.map((s, i) => (
-        <line key={i} x1={center} y1={center} x2={center + Math.cos(i * angleStep - Math.PI / 2) * radius} y2={center + Math.sin(i * angleStep - Math.PI / 2) * radius} stroke="rgba(255,255,255,0.05)" />
+        <line key={i} x1={center} y1={center} x2={center + Math.cos(i * angleStep - Math.PI / 2) * radius} y2={center + Math.sin(i * angleStep - Math.PI / 2) * radius} stroke="rgba(255,253,242,0.06)" />
       ))}
-      {/* Polygons */}
       {Object.entries(REF_VALUES).map(([m, values]) => (
         <polygon key={m} points={getPoints(values)} fill={DNA_CARDS.find(c => c.model === m).color} fillOpacity="0.05" stroke={DNA_CARDS.find(c => c.model === m).color} strokeWidth="1" strokeOpacity="0.2" />
       ))}
@@ -68,9 +67,8 @@ const RadarChart = ({ data, size = 300 }) => {
           strokeWidth="2" 
         />
       )}
-      {/* Labels */}
       {SIGNALS.map((s, i) => (
-        <text key={i} x={center + Math.cos(i * angleStep - Math.PI / 2) * (radius + 20)} y={center + Math.sin(i * angleStep - Math.PI / 2) * (radius + 20)} fill="rgba(255,255,255,0.3)" fontSize="8" textAnchor="middle">
+        <text key={i} x={center + Math.cos(i * angleStep - Math.PI / 2) * (radius + 20)} y={center + Math.sin(i * angleStep - Math.PI / 2) * (radius + 20)} fill="rgba(255,253,242,0.4)" fontSize="8" textAnchor="middle">
           {s.name}
         </text>
       ))}
@@ -88,28 +86,89 @@ const SignalExplainer = () => {
   const [latestAnalysis, setLatestAnalysis] = useState(null);
 
   useEffect(() => {
-    const saved = localStorage.getItem('llm_forensics_dataset');
-    if (saved) setDataset(JSON.parse(saved));
+    const fetchDataset = async () => {
+      try {
+        const resp = await fetch('http://127.0.0.1:8000/dataset');
+        if (resp.ok) {
+          const data = await resp.json();
+          setDataset(data);
+        }
+      } catch (err) {
+        console.error('Failed to fetch dataset:', err);
+      }
+    };
+    fetchDataset();
 
     const handleAnalysis = (e) => {
       setLatestAnalysis(e.detail);
-      // We don't have the features here yet if the API only returns model results.
-      // But for the UI, let's assume we can at least show the winner and its signals.
     };
     window.addEventListener('llm_classification_complete', handleAnalysis);
     return () => window.removeEventListener('llm_classification_complete', handleAnalysis);
   }, []);
 
-  const handleProbe = async () => {
-    if (probeText.split(/\s+/).length < 20) return;
-    try {
-      const res = await axios.post('http://127.0.0.1:8000/classify', { text: probeText });
-      // In a real app we'd get features back. Let's assume the API returns features or we extract them FE-side.
-      // For this demo, let's extract them via a dummy call or use mock if API doesn't return them directly.
-      const featuresRes = await axios.post('http://127.0.0.1:8000/generate', { model_label: 'GPT-4', topic: 'probe', text_type: 'Probe', length_target: 'Short' });
-      setProbeResult(featuresRes.data.features);
-    } catch (err) { console.error(err); }
-  };
+  useEffect(() => {
+    let timeout;
+    const wordCount = probeText.trim().split(/\s+/).filter(w => w).length;
+    if (wordCount < 10) {
+      setProbeResult(null);
+      return;
+    }
+    timeout = setTimeout(async () => {
+      try {
+        const featuresRes = await axios.post('http://127.0.0.1:8000/features', { text: probeText }, { timeout: 8000 });
+        const rawFeatures = featuresRes.data;
+        // Normalize raw feature values to 0-100 scale for radar chart display
+        const SCALE_MAP = {
+          em_dash_rate: 5,          // max ~5 per 100 words = 100%
+          bullet_density: 5,        // same
+          bold_header_density: 5,
+          hedging_rate: 2,          // hedges are rarer
+          mean_sentence_length: 40, // 40 words/sentence = 100%
+          std_sentence_length: 20,
+          oxford_comma_rate: 1,     // 0-1 ratio → *100
+          has_numbered_steps: 1,    // binary
+          has_preamble: 1,
+          parenthetical_rate: 3
+        };
+        const normalized = {};
+        for (const sig of SIGNALS) {
+          const raw = rawFeatures[sig.id] ?? 0;
+          const scale = SCALE_MAP[sig.id] ?? 1;
+          // oxford_comma_rate and has_* are already 0-1, others are per-100
+          if (sig.id === 'oxford_comma_rate' || sig.id === 'has_numbered_steps' || sig.id === 'has_preamble') {
+            normalized[sig.id] = Math.min(100, raw * 100);
+          } else {
+            normalized[sig.id] = Math.min(100, (raw / scale) * 100);
+          }
+        }
+        setProbeResult(normalized);
+      } catch (err) {
+        console.error('Features API error:', err);
+        setProbeResult(null);
+      }
+    }, 500);
+    return () => clearTimeout(timeout);
+  }, [probeText]);
+
+  const syntheticPoints = useMemo(() => {
+    const pts = [];
+    Object.entries(REF_VALUES).forEach(([m, vals]) => {
+      for (let i = 0; i < 50; i++) {
+        pts.push({
+          id: `${m}-${i}`,
+          model_label: m,
+          topic: 'Synthetic Data',
+          features: Object.keys(vals).reduce((acc, k) => {
+            acc[k] = vals[k] + (Math.random() * 30 - 15);
+            return acc;
+          }, {})
+        });
+      }
+    });
+    return pts;
+  }, []);
+
+  const displayData = dataset.length > 0 ? dataset : syntheticPoints;
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -120,7 +179,6 @@ const SignalExplainer = () => {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: '2.5rem' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
-          {/* Signal Matrix */}
           <div className="glass-panel" style={{ padding: '2rem' }}>
             <h3 style={{ marginBottom: '2rem' }}>Signal Comparison Matrix</h3>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
@@ -136,6 +194,7 @@ const SignalExplainer = () => {
                         <motion.div 
                           initial={{ width: 0 }} 
                           animate={{ width: `${values[signal.id]}%` }} 
+                          transition={{ duration: 0.5 }}
                           style={{ height: '100%', background: DNA_CARDS.find(c => c.model === model).color, opacity: activeSignal && activeSignal !== signal.id ? 0.3 : 1 }} 
                         />
                       </div>
@@ -146,14 +205,12 @@ const SignalExplainer = () => {
             </div>
           </div>
 
-          {/* Radar Probe */}
           <div className="glass-panel" style={{ padding: '2.5rem', textAlign: 'center' }}>
             <h3 style={{ marginBottom: '1.5rem' }}>Interactive Signal Probe</h3>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', alignItems: 'center' }}>
               <div style={{ textAlign: 'left' }}>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem', fontSize: '0.9rem' }}>Paste text to see its fingerprint compared to the model baselines.</p>
                 <textarea className="glass-input" style={{ width: '100%', minHeight: '150px', marginBottom: '1rem' }} placeholder="Paste text here to probe..." value={probeText} onChange={e => setProbeText(e.target.value)} />
-                <button className="glass-button" style={{ background: 'var(--accent-primary)', color: '#fff', border: 'none', width: '100%' }} onClick={handleProbe}>Probe Stylometrics</button>
               </div>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <RadarChart data={probeResult} />
@@ -161,7 +218,6 @@ const SignalExplainer = () => {
             </div>
           </div>
 
-          {/* Scatter Plot */}
           <div className="glass-panel" style={{ padding: '2rem' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
               <h3>Signal Correlation Explorer</h3>
@@ -174,25 +230,26 @@ const SignalExplainer = () => {
                 </select>
               </div>
             </div>
-            <div style={{ height: '300px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.05)' }}>
-              {dataset.length > 0 ? dataset.map(d => (
+            <div style={{ height: '300px', background: 'rgba(255,253,242,0.02)', borderRadius: '8px', position: 'relative', overflow: 'hidden', border: '1px solid rgba(255,253,242,0.06)' }}>
+              {displayData.map(d => (
                 <motion.div 
                   key={d.id}
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                   style={{ 
                     position: 'absolute', 
-                    width: '8px', height: '8px', borderRadius: '50%', 
+                    width: '6px', height: '6px', borderRadius: '50%', 
                     background: DNA_CARDS.find(c => c.model === d.model_label).color,
                     left: `${Math.min(95, Math.max(5, (d.features[scatterX] || 0)))}%`,
                     bottom: `${Math.min(95, Math.max(5, (d.features[scatterY] || 0)))}%`,
-                    boxShadow: `0 0 10px ${DNA_CARDS.find(c => c.model === d.model_label).color}44`
+                    boxShadow: `0 0 10px ${DNA_CARDS.find(c => c.model === d.model_label).color}44`,
+                    opacity: dataset.length === 0 ? 0.4 : 1
                   }}
                   title={`${d.model_label}: ${d.topic}`}
                 />
-              )) : (
-                <div style={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', opacity: 0.1 }}>
-                  <Search size={48} />
-                  <span style={{ marginLeft: '1rem' }}>Generate dataset samples to see correlation dots</span>
+              ))}
+              {dataset.length === 0 && (
+                <div style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '0.7rem', color: 'var(--text-muted)', background: 'rgba(0,0,0,0.6)', padding: '0.2rem 0.5rem', borderRadius: '4px', border: '1px solid rgba(255,253,242,0.08)' }}>
+                  Showing synthetic demo data
                 </div>
               )}
             </div>
@@ -202,7 +259,6 @@ const SignalExplainer = () => {
           </div>
         </div>
 
-        {/* Model DNA Cards */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
           {DNA_CARDS.map(card => (
             <div key={card.model} className="glass-panel" style={{ padding: '1.5rem', borderLeft: `4px solid ${card.color}` }}>
@@ -214,7 +270,7 @@ const SignalExplainer = () => {
               </div>
               <p style={{ fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '1rem' }}>"{card.phrase}"</p>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginBottom: '1rem' }}>
-                {card.strong.map(s => <span key={s} style={{ fontSize: '0.65rem', padding: '0.2rem 0.4rem', background: 'rgba(255,255,255,0.05)', borderRadius: '4px' }}>{s}</span>)}
+                {card.strong.map(s => <span key={s} style={{ fontSize: '0.65rem', padding: '0.2rem 0.4rem', background: 'rgba(255,253,242,0.05)', border: '1px solid rgba(255,253,242,0.1)', borderRadius: '4px' }}>{s}</span>)}
               </div>
               <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>
                 <strong>Most confused with:</strong> {card.confused}
@@ -233,7 +289,7 @@ const SignalExplainer = () => {
                 </div>
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem' }}>
                   {latestAnalysis.top_signals.map(s => (
-                    <span key={s} style={{ fontSize: '0.65rem', padding: '0.2rem 0.4rem', background: 'rgba(255,255,255,0.05)', borderRadius: '4px' }}>{s}</span>
+                    <span key={s} style={{ fontSize: '0.65rem', padding: '0.2rem 0.4rem', background: 'rgba(255,253,242,0.05)', border: '1px solid rgba(255,253,242,0.1)', borderRadius: '4px' }}>{s}</span>
                   ))}
                 </div>
               </div>

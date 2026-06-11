@@ -1,0 +1,2732 @@
+[
+  {
+    "id": "dd672e70-8075-479a-9231-a62b0d7ae278",
+    "model_label": "GPT-4",
+    "topic": "PYTHON",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here's an exploration of Python, a high-level, interpreted programming language that has established itself as a cornerstone of modern computer science and software development. Since its conception by Guido van Rossum in the late 1980s, Python has evolved from a niche scripting tool into one of the most widely adopted languages in the world. This essay examines the core philosophy, technical characteristics, and diverse applications that define Python, while also addressing its inherent limitations.\n\n### The Philosophy of Readability and Simplicity\n\nAt the heart of Python's enduring popularity is its distinctive design philosophy, which prioritizes developer productivity and code legibility. This philosophy is formally articulated in \"The Zen of Python\" (PEP 20), a collection of nineteen guiding principles for writing computer software. Among these, the dictum \"beautiful is better than ugly\" and \"explicit is better than implicit\" are particularly influential. \n\nIt's worth noting that this emphasis on readability is not merely an aesthetic preference; it serves a practical pedagogical function. By utilizing clean syntax and requiring significant whitespace for code blocks, Python eliminates much of the visual clutter associated with languages like C++ or Java, which rely heavily on curly braces and semicolons. Consequently, programmers can focus more on solving algorithmic problems rather than managing complex syntax rules. This readability facilitates collaboration, as code written by one developer tends to be easily understood by another, thereby reducing the overall cost of software maintenance.\n\n### Key Technical Characteristics\n\nTo understand Python\u2019s versatility, it is helpful to examine its primary technical attributes. These characteristics contribute to both its ease of use and its adaptability across various domains:\n\n1. **Interpreted and Dynamically Typed:** Python is typically executed line-by-line by an interpreter, which facilitates rapid prototyping and interactive development. Furthermore, Python employs dynamic typing, meaning that variable types are determined at runtime rather than compile time. While this offers immense flexibility, it is often argued that dynamic typing can introduce runtime errors that might otherwise be caught during compilation in statically typed languages.\n2. **Multi-Paradigm Support:** Python does not force developers into a single programming methodology. It fully supports object-oriented programming, procedural programming, and, to a significant extent, functional programming. This flexibility allows developers to choose the paradigm that is most appropriate for the specific task at hand.\n3. **The \"Batteries Included\" Philosophy:** Python's standard library is exceptionally robust, offering pre-built modules for a wide array of tasks, including file input/output, system calls, and network communications. This minimizes the necessity for developers to write boilerplate code or rely excessively on third-party packages for basic functionality.\n\n### Python's Dominance in Modern Technology\n\nWhile Python is a general-purpose language, its adoption has been particularly pronounced in several cutting-edge fields. \n\nIn the domain of artificial intelligence and data science, Python has become the de facto standard. Libraries such as NumPy, Pandas, Scikit-Learn, TensorFlow, and PyTorch have transformed Python into a powerful engine for mathematical computation and machine learning. Importantly, Python acts as a wrapper or \"glue language\" in these scenarios: the computationally heavy operations are typically executed in highly optimized backends written in C or C++, while Python provides the accessible, high-level interface that researchers and developers use to orchestrate these operations.\n\nIn web development, frameworks like Django and Flask have enabled developers to build secure, scalable web applications rapidly. Additionally, Python remains highly favored for automation, scripting, and devops, allowing system administrators to automate repetitive tasks with minimal effort.\n\nDespite these strengths, Python is not without its limitations. It is generally recognized that Python is slower than compiled languages like C or Rust. This performance disparity is largely due to the overhead of the interpreter and dynamic typing. Furthermore, the Global Interpreter Lock (GIL), a mechanism used in the standard CPython implementation to prevent multiple threads from executing Python bytecodes at once, has historically presented challenges for multi-threaded, CPU-bound applications, though ongoing development efforts continue to address this constraint.\n\nIn summary, Python's ascent to the upper echelons of the programming landscape is a testament to its elegant design, adaptability, and the strength of its community. By prioritizing human readability over machine efficiency, it has democratized programming, making software development accessible to scientists, educators, and hobbyists alike. While it may not be the optimal choice for resource-constrained or highly latency-sensitive systems, its utility as a versatile, powerful, and user-friendly tool remains largely unparalleled.",
+    "word_count": 716,
+    "char_count": 5203,
+    "timestamp": "2026-06-11T12:45:10.412037",
+    "features": {
+      "type_token_ratio": 0.5481682496607869,
+      "avg_word_length": 5.850746268656716,
+      "hedging_rate": 0.13568521031207598,
+      "filler_rate": 3.7037037037037033,
+      "mean_sentence_length": 27.296296296296298,
+      "std_sentence_length": 11.749908793388535,
+      "subordinate_clause_ratio": 0.14814814814814814,
+      "em_dash_rate": 0.0,
+      "bullet_density": 0.40705563093622793,
+      "bold_header_density": 0.8141112618724559,
+      "oxford_comma_rate": 0.28,
+      "parenthetical_rate": 0.27137042062415195,
+      "has_preamble": 0.0,
+      "has_numbered_steps": 1.0,
+      "has_summary_ending": 1.0,
+      "paragraph_count": 13,
+      "avg_paragraph_length": 56.69230769230769
+    }
+  },
+  {
+    "id": "f119e9cc-4f3a-404f-9199-aec3f37d4a18",
+    "model_label": "GPT-4",
+    "topic": "The history of jazz",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of The history of jazz. 1. Importance: The history of jazz is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, The history of jazz is a cornerstone of modern society.",
+    "word_count": 42,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.770289",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4880aee1-3a0b-4f37-ab90-b7c1949a257c",
+    "model_label": "GPT-4",
+    "topic": "The history of jazz",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of The history of jazz. 1. Importance: The history of jazz is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, The history of jazz is a cornerstone of modern society.",
+    "word_count": 42,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.770381",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "5fdffe28-d068-4276-938d-8e807a5d02c0",
+    "model_label": "GPT-4",
+    "topic": "The history of jazz",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of The history of jazz. 1. Importance: The history of jazz is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, The history of jazz is a cornerstone of modern society.",
+    "word_count": 42,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.770394",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "f174e4ea-d84f-4540-8a3a-d2677813094f",
+    "model_label": "GPT-4",
+    "topic": "Space exploration",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Space exploration. 1. Importance: Space exploration is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Space exploration is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 257,
+    "timestamp": "2026-06-11T12:19:34.770404",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "18398c6b-3df8-46c8-ac89-30e5c662a864",
+    "model_label": "GPT-4",
+    "topic": "Python programming",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Python programming. 1. Importance: Python programming is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Python programming is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 260,
+    "timestamp": "2026-06-11T12:19:34.770413",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "17e0d73c-b03d-480a-ada7-4b84e8e61d55",
+    "model_label": "GPT-4",
+    "topic": "Sustainable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Sustainable energy. 1. Importance: Sustainable energy is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Sustainable energy is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 260,
+    "timestamp": "2026-06-11T12:19:34.770420",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "851c378a-76b5-4956-8f21-5ddf541d168f",
+    "model_label": "GPT-4",
+    "topic": "Ancient Rome",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Ancient Rome. 1. Importance: Ancient Rome is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Ancient Rome is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770428",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "e5499201-25f2-4199-939c-066528362786",
+    "model_label": "GPT-4",
+    "topic": "Ancient Rome",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Ancient Rome. 1. Importance: Ancient Rome is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Ancient Rome is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770434",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "a8e4c2ee-a83b-429f-a665-d613c8034800",
+    "model_label": "GPT-4",
+    "topic": "The history of jazz",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of The history of jazz. 1. Importance: The history of jazz is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, The history of jazz is a cornerstone of modern society.",
+    "word_count": 42,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.770442",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "98e7f858-7016-430a-8ced-62d7aa1630e5",
+    "model_label": "GPT-4",
+    "topic": "Space exploration",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Space exploration. 1. Importance: Space exploration is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Space exploration is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 257,
+    "timestamp": "2026-06-11T12:19:34.770449",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "a5d9b114-c05f-4ad5-adae-7b54eab5206f",
+    "model_label": "GPT-4",
+    "topic": "Cybersecurity",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Cybersecurity. 1. Importance: Cybersecurity is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Cybersecurity is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 245,
+    "timestamp": "2026-06-11T12:19:34.770458",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "ea957b4b-be8a-4d98-b11e-721d57d07d66",
+    "model_label": "GPT-4",
+    "topic": "Architecture",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Architecture. 1. Importance: Architecture is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Architecture is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770471",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "99b6110d-d1bf-4e6e-b5d1-8639f31a533b",
+    "model_label": "GPT-4",
+    "topic": "Ancient Rome",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Ancient Rome. 1. Importance: Ancient Rome is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Ancient Rome is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770478",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "59c43b2f-5f40-42dc-baf4-c7085e74d84b",
+    "model_label": "GPT-4",
+    "topic": "Space exploration",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Space exploration. 1. Importance: Space exploration is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Space exploration is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 257,
+    "timestamp": "2026-06-11T12:19:34.770484",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "6442d682-fd94-4706-8fa3-8490f082f023",
+    "model_label": "GPT-4",
+    "topic": "Renewable energy",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Renewable energy. 1. Importance: Renewable energy is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Renewable energy is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 254,
+    "timestamp": "2026-06-11T12:19:34.770491",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "0dd63ca3-c3ff-477a-9378-4519211f7549",
+    "model_label": "GPT-4",
+    "topic": "Ancient Rome",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Ancient Rome. 1. Importance: Ancient Rome is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Ancient Rome is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770497",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "ce63c72f-a5bb-4c88-9358-0013d26e9a6c",
+    "model_label": "GPT-4",
+    "topic": "Baking a cake",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Baking a cake. 1. Importance: Baking a cake is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Baking a cake is a cornerstone of modern society.",
+    "word_count": 39,
+    "char_count": 245,
+    "timestamp": "2026-06-11T12:19:34.770505",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "d22a33b8-8aaa-45d9-8510-a21e9dfad41d",
+    "model_label": "GPT-4",
+    "topic": "Renewable energy",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Renewable energy. 1. Importance: Renewable energy is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Renewable energy is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 254,
+    "timestamp": "2026-06-11T12:19:34.770512",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "c705629b-ad60-450f-ad62-eabe4ab8e09d",
+    "model_label": "GPT-4",
+    "topic": "Baking a cake",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Baking a cake. 1. Importance: Baking a cake is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Baking a cake is a cornerstone of modern society.",
+    "word_count": 39,
+    "char_count": 245,
+    "timestamp": "2026-06-11T12:19:34.770519",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "be50db15-e096-4644-8751-fd379e274245",
+    "model_label": "GPT-4",
+    "topic": "Oceanography",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Oceanography. 1. Importance: Oceanography is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Oceanography is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770525",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "fcbe4c81-e81c-45b5-a418-505107f861d3",
+    "model_label": "GPT-4",
+    "topic": "Oceanography",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Oceanography. 1. Importance: Oceanography is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Oceanography is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770533",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "2e432ac3-ad8c-436c-9332-34f2f083583f",
+    "model_label": "GPT-4",
+    "topic": "Architecture",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Architecture. 1. Importance: Architecture is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Architecture is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770539",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "a9e61b92-48a1-4cd9-8902-9f594ec34c8f",
+    "model_label": "GPT-4",
+    "topic": "The history of jazz",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of The history of jazz. 1. Importance: The history of jazz is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, The history of jazz is a cornerstone of modern society.",
+    "word_count": 42,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.770547",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "f4f340f9-b079-475b-b0bc-42301c53f2bb",
+    "model_label": "GPT-4",
+    "topic": "Sustainable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Sustainable energy. 1. Importance: Sustainable energy is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Sustainable energy is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 260,
+    "timestamp": "2026-06-11T12:19:34.770555",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "a11a0879-99b1-4e6b-b24f-f79994bf3e6b",
+    "model_label": "GPT-4",
+    "topic": "Philosophy of mind",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Philosophy of mind. 1. Importance: Philosophy of mind is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Philosophy of mind is a cornerstone of modern society.",
+    "word_count": 39,
+    "char_count": 260,
+    "timestamp": "2026-06-11T12:19:34.770562",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "9b462eca-dc64-4369-8525-c6dac79aa6a9",
+    "model_label": "GPT-4",
+    "topic": "Python programming",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Python programming. 1. Importance: Python programming is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Python programming is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 260,
+    "timestamp": "2026-06-11T12:19:34.770569",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "84e24f30-d6e6-4d29-8338-5aa554c6c8cc",
+    "model_label": "GPT-4",
+    "topic": "Quantum computing",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Quantum computing. 1. Importance: Quantum computing is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Quantum computing is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 257,
+    "timestamp": "2026-06-11T12:19:34.770577",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4eb38d2e-aa9e-439c-a22c-a5eadb6453cf",
+    "model_label": "GPT-4",
+    "topic": "Architecture",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Architecture. 1. Importance: Architecture is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Architecture is a cornerstone of modern society.",
+    "word_count": 33,
+    "char_count": 242,
+    "timestamp": "2026-06-11T12:19:34.770583",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "0ad0240d-b395-4fd4-8eb8-930755d37f06",
+    "model_label": "GPT-4",
+    "topic": "Digital marketing",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Digital marketing. 1. Importance: Digital marketing is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Digital marketing is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 257,
+    "timestamp": "2026-06-11T12:19:34.770590",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "10ab10e0-67aa-45b4-90ec-a5aa7f60cba4",
+    "model_label": "GPT-4",
+    "topic": "Machine learning",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Here is a breakdown of Machine learning. 1. Importance: Machine learning is critical. 2. Implementation: It requires careful thought. Importantly, we must consider the ethical implications. In summary, Machine learning is a cornerstone of modern society.",
+    "word_count": 36,
+    "char_count": 254,
+    "timestamp": "2026-06-11T12:19:34.770596",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "5cdd6604-f5fb-4877-997d-b7d6af54fd69",
+    "model_label": "Claude",
+    "topic": "Sustainable energy",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Sustainable energy reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Sustainable energy matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 275,
+    "timestamp": "2026-06-11T12:19:34.771352",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "0426a6c4-f927-4cb4-ba89-54aea1309bf1",
+    "model_label": "Claude",
+    "topic": "World War II",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of World War II reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why World War II matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 45,
+    "char_count": 267,
+    "timestamp": "2026-06-11T12:19:34.771388",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "87077da7-a7cd-4ee9-afe6-0c4fedb7ab70",
+    "model_label": "Claude",
+    "topic": "Machine learning",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Machine learning reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Machine learning matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 274,
+    "timestamp": "2026-06-11T12:19:34.771402",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "586af108-844a-4da4-bf2a-866d15bbca6e",
+    "model_label": "Claude",
+    "topic": "Human evolution",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Human evolution reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Human evolution matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 273,
+    "timestamp": "2026-06-11T12:19:34.771411",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4a162732-0001-4979-8cc8-50a3d0cb01c5",
+    "model_label": "Claude",
+    "topic": "Sustainable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Sustainable energy reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Sustainable energy matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 278,
+    "timestamp": "2026-06-11T12:19:34.771418",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "5139a265-b2c1-44fb-882c-36e779495fa2",
+    "model_label": "Claude",
+    "topic": "Machine learning",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Machine learning reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Machine learning matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 274,
+    "timestamp": "2026-06-11T12:19:34.771426",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "1e5807f2-1339-4fd0-ba4c-7cda9bf425a6",
+    "model_label": "Claude",
+    "topic": "Philosophy of mind",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Philosophy of mind reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Philosophy of mind matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 45,
+    "char_count": 279,
+    "timestamp": "2026-06-11T12:19:34.771441",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "5c598ae9-4caa-4bc0-8f29-eed9121f231a",
+    "model_label": "Claude",
+    "topic": "Oceanography",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "The exploration of Oceanography reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Opinion, we shall see why Oceanography matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 265,
+    "timestamp": "2026-06-11T12:19:34.771449",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "c4e72965-8c49-4da0-ae80-f1e823030b5e",
+    "model_label": "Claude",
+    "topic": "Python programming",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "The exploration of Python programming reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Opinion, we shall see why Python programming matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 277,
+    "timestamp": "2026-06-11T12:19:34.771457",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "eb8977df-14b9-446b-b3cf-2119f847adf2",
+    "model_label": "Claude",
+    "topic": "Quantum computing",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Quantum computing reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Quantum computing matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 277,
+    "timestamp": "2026-06-11T12:19:34.771465",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "07e4b435-0aa3-40ff-99c4-cf01705450c1",
+    "model_label": "Claude",
+    "topic": "Baking a cake",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Baking a cake reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Baking a cake matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 45,
+    "char_count": 269,
+    "timestamp": "2026-06-11T12:19:34.771476",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4b839c86-e072-4abb-9b1b-0561b7e800ac",
+    "model_label": "Claude",
+    "topic": "Human evolution",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Human evolution reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Human evolution matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 269,
+    "timestamp": "2026-06-11T12:19:34.771485",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "1920cc4c-79cc-4f65-831b-5df28a6bdfec",
+    "model_label": "Claude",
+    "topic": "Machine learning",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "The exploration of Machine learning reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Opinion, we shall see why Machine learning matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 273,
+    "timestamp": "2026-06-11T12:19:34.771493",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4706b88c-463a-410b-af05-bff7ad3eed17",
+    "model_label": "Claude",
+    "topic": "Space exploration",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Space exploration reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Space exploration matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 273,
+    "timestamp": "2026-06-11T12:19:34.771500",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "8716718c-010e-459d-a308-8d86e19faa03",
+    "model_label": "Claude",
+    "topic": "Renewable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Renewable energy reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Renewable energy matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 275,
+    "timestamp": "2026-06-11T12:19:34.771508",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "f78599e2-8bb1-44b8-9a87-4e93cbf3b41d",
+    "model_label": "Claude",
+    "topic": "Climate change",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Climate change reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Climate change matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 270,
+    "timestamp": "2026-06-11T12:19:34.771516",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "81b0e8f4-759a-481c-a9ca-d7fe34315a9c",
+    "model_label": "Claude",
+    "topic": "Ancient Rome",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Ancient Rome reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Ancient Rome matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 267,
+    "timestamp": "2026-06-11T12:19:34.771525",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "59004715-7429-42c3-9e84-0fed9076f644",
+    "model_label": "Claude",
+    "topic": "Machine learning",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Machine learning reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Machine learning matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 274,
+    "timestamp": "2026-06-11T12:19:34.771532",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "c701c9c0-9203-4562-90ca-4efea2d31baa",
+    "model_label": "Claude",
+    "topic": "Philosophy of mind",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Philosophy of mind reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Philosophy of mind matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 45,
+    "char_count": 278,
+    "timestamp": "2026-06-11T12:19:34.771540",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "2daad55d-3087-446a-845f-3b16fd051b38",
+    "model_label": "Claude",
+    "topic": "Architecture",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "The exploration of Architecture reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Opinion, we shall see why Architecture matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 265,
+    "timestamp": "2026-06-11T12:19:34.771548",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "189898d8-d5cf-4900-a2b5-e97e9b4761b3",
+    "model_label": "Claude",
+    "topic": "World War II",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of World War II reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why World War II matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 45,
+    "char_count": 267,
+    "timestamp": "2026-06-11T12:19:34.771556",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "1337e009-3ca2-44ed-b79c-ea033332e556",
+    "model_label": "Claude",
+    "topic": "Machine learning",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "The exploration of Machine learning reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Opinion, we shall see why Machine learning matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 273,
+    "timestamp": "2026-06-11T12:19:34.771563",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "7f565dc9-d28d-4cef-8cd9-99f8cf5215c2",
+    "model_label": "Claude",
+    "topic": "Cybersecurity",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Cybersecurity reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Cybersecurity matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 265,
+    "timestamp": "2026-06-11T12:19:34.771571",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "a5ed3b69-a298-4f8c-b1c4-4f54410d0dcd",
+    "model_label": "Claude",
+    "topic": "Oceanography",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Oceanography reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Oceanography matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.771579",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "6d241dac-6805-457f-9280-23f1c781407c",
+    "model_label": "Claude",
+    "topic": "Architecture",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Architecture reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Architecture matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 266,
+    "timestamp": "2026-06-11T12:19:34.771588",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "eee7b056-629b-4ecc-8484-0719a40f0832",
+    "model_label": "Claude",
+    "topic": "Climate change",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Climate change reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Climate change matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 267,
+    "timestamp": "2026-06-11T12:19:34.771595",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "12afd3cf-63fc-41ea-abc0-f7b7c9c0de85",
+    "model_label": "Claude",
+    "topic": "Quantum computing",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Quantum computing reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Quantum computing matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 277,
+    "timestamp": "2026-06-11T12:19:34.771603",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "4a5016bd-ae38-420f-83d3-33065190fee2",
+    "model_label": "Claude",
+    "topic": "Quantum computing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "The exploration of Quantum computing reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Creative, we shall see why Quantum computing matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 276,
+    "timestamp": "2026-06-11T12:19:34.771613",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "c8df86ab-2190-47ab-b707-1d106ee11597",
+    "model_label": "Claude",
+    "topic": "Blockchain",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "The exploration of Blockchain reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Technical, we shall see why Blockchain matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 41,
+    "char_count": 263,
+    "timestamp": "2026-06-11T12:19:34.771621",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "d4772fd6-0ae3-47fd-b424-e6214ee0fb03",
+    "model_label": "Claude",
+    "topic": "Climate change",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "The exploration of Climate change reveals a fascinating nuance\u2014one that is often overlooked. It is quite a deep subject, isn't it? (Though some might disagree). In this Essay, we shall see why Climate change matters more than ever\u2014especially in a world of complexity.",
+    "word_count": 43,
+    "char_count": 267,
+    "timestamp": "2026-06-11T12:19:34.771630",
+    "features": {
+      "em_dash_rate": 1.5,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 25,
+      "oxford_comma_rate": 0.9
+    }
+  },
+  {
+    "id": "80a35143-2e05-46aa-9500-5226280decd2",
+    "model_label": "Gemini",
+    "topic": "Python programming",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "# Python programming Overview\n**Key Takeaways**\n* Python programming is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Python programming to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771640",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "256c9868-c4f7-4454-99d2-6633a057525f",
+    "model_label": "Gemini",
+    "topic": "The history of jazz",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# The history of jazz Overview\n**Key Takeaways**\n* The history of jazz is vital.\n* Here is why it works.\n\n### Practical Applications\nUse The history of jazz to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 36,
+    "char_count": 217,
+    "timestamp": "2026-06-11T12:19:34.771649",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "ca9746f6-f137-426c-917a-98bf9e24ebef",
+    "model_label": "Gemini",
+    "topic": "Baking a cake",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Baking a cake Overview\n**Key Takeaways**\n* Baking a cake is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Baking a cake to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 33,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771658",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "3afac734-0dbf-4984-bbc5-50b63e2f8786",
+    "model_label": "Gemini",
+    "topic": "Oceanography",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "# Oceanography Overview\n**Key Takeaways**\n* Oceanography is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Oceanography to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771665",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "3bd6ab96-aad4-4edd-a8c5-ecce23b28e5d",
+    "model_label": "Gemini",
+    "topic": "Oceanography",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Oceanography Overview\n**Key Takeaways**\n* Oceanography is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Oceanography to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771671",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "33eb76e6-1b5f-4a25-8c46-78b536e00bb5",
+    "model_label": "Gemini",
+    "topic": "Digital marketing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Digital marketing Overview\n**Key Takeaways**\n* Digital marketing is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Digital marketing to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 211,
+    "timestamp": "2026-06-11T12:19:34.771678",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "b534ad3a-1533-4b14-bfb1-93be2a88f708",
+    "model_label": "Gemini",
+    "topic": "Mental health",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Mental health Overview\n**Key Takeaways**\n* Mental health is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Mental health to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771684",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "9375911b-ed22-4b72-b585-dc7a312e74fb",
+    "model_label": "Gemini",
+    "topic": "Sustainable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Sustainable energy Overview\n**Key Takeaways**\n* Sustainable energy is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Sustainable energy to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771691",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "3bbf74c3-14d8-42b2-ae9e-dc4405e947be",
+    "model_label": "Gemini",
+    "topic": "Climate change",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Climate change Overview\n**Key Takeaways**\n* Climate change is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Climate change to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 202,
+    "timestamp": "2026-06-11T12:19:34.771697",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "81892741-eca6-4fd6-ae03-b13c9b187c23",
+    "model_label": "Gemini",
+    "topic": "Architecture",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Architecture Overview\n**Key Takeaways**\n* Architecture is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Architecture to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771704",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "79c1e89b-0235-4d41-bdc2-1e073b5b33fc",
+    "model_label": "Gemini",
+    "topic": "Blockchain",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Blockchain Overview\n**Key Takeaways**\n* Blockchain is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Blockchain to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 190,
+    "timestamp": "2026-06-11T12:19:34.771710",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "b04e7686-1a55-4a92-bb03-f3b6c17f8cd6",
+    "model_label": "Gemini",
+    "topic": "Ancient Rome",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "# Ancient Rome Overview\n**Key Takeaways**\n* Ancient Rome is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Ancient Rome to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771717",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f0272d98-67c9-4151-90f4-8944ed497d6c",
+    "model_label": "Gemini",
+    "topic": "Veganism",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Veganism Overview\n**Key Takeaways**\n* Veganism is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Veganism to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 184,
+    "timestamp": "2026-06-11T12:19:34.771723",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "06b2ad70-478a-4e6d-b1eb-511cec9e4679",
+    "model_label": "Gemini",
+    "topic": "Mental health",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Mental health Overview\n**Key Takeaways**\n* Mental health is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Mental health to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771729",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "4bd97b44-14d0-4d54-998f-aec8dd6137c5",
+    "model_label": "Gemini",
+    "topic": "Blockchain",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "# Blockchain Overview\n**Key Takeaways**\n* Blockchain is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Blockchain to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 190,
+    "timestamp": "2026-06-11T12:19:34.771735",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "516d9cd3-f1bc-4347-89cc-c46cbc236a65",
+    "model_label": "Gemini",
+    "topic": "Sustainable energy",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "# Sustainable energy Overview\n**Key Takeaways**\n* Sustainable energy is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Sustainable energy to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771743",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "d78114a0-35c0-4673-862b-6ed14a5fb502",
+    "model_label": "Gemini",
+    "topic": "Baking a cake",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Baking a cake Overview\n**Key Takeaways**\n* Baking a cake is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Baking a cake to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 33,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771750",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c82f6d5e-d10f-452c-a49a-9f205a4eec42",
+    "model_label": "Gemini",
+    "topic": "Sustainable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Sustainable energy Overview\n**Key Takeaways**\n* Sustainable energy is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Sustainable energy to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771759",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "9e20ae98-9ab6-4269-b904-b34b3f48540b",
+    "model_label": "Gemini",
+    "topic": "Space exploration",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Space exploration Overview\n**Key Takeaways**\n* Space exploration is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Space exploration to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 211,
+    "timestamp": "2026-06-11T12:19:34.771766",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "d4ea9717-89b1-4135-ac6d-03f77d94c1a5",
+    "model_label": "Gemini",
+    "topic": "Renewable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Renewable energy Overview\n**Key Takeaways**\n* Renewable energy is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Renewable energy to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.771774",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "7f671d4e-cd41-4e8b-93c8-008c86f86176",
+    "model_label": "Gemini",
+    "topic": "Philosophy of mind",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Philosophy of mind Overview\n**Key Takeaways**\n* Philosophy of mind is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Philosophy of mind to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 33,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771782",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "7db7dfe7-c89f-40e3-a301-4b474c72e68c",
+    "model_label": "Gemini",
+    "topic": "The history of jazz",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# The history of jazz Overview\n**Key Takeaways**\n* The history of jazz is vital.\n* Here is why it works.\n\n### Practical Applications\nUse The history of jazz to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 36,
+    "char_count": 217,
+    "timestamp": "2026-06-11T12:19:34.771789",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f32640d6-1a62-4d44-a04e-6a0446327548",
+    "model_label": "Gemini",
+    "topic": "Human evolution",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Human evolution Overview\n**Key Takeaways**\n* Human evolution is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Human evolution to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 205,
+    "timestamp": "2026-06-11T12:19:34.771796",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "cb39bb73-fc97-46ef-9df8-8b3be337f68c",
+    "model_label": "Gemini",
+    "topic": "The history of jazz",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# The history of jazz Overview\n**Key Takeaways**\n* The history of jazz is vital.\n* Here is why it works.\n\n### Practical Applications\nUse The history of jazz to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 36,
+    "char_count": 217,
+    "timestamp": "2026-06-11T12:19:34.771802",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "a93ce25a-ea9c-4b79-b6db-fbcbcbcee2e8",
+    "model_label": "Gemini",
+    "topic": "Philosophy of mind",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# Philosophy of mind Overview\n**Key Takeaways**\n* Philosophy of mind is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Philosophy of mind to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 33,
+    "char_count": 214,
+    "timestamp": "2026-06-11T12:19:34.771809",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "856404ba-0c92-4e3d-b6f6-863f5e0d22ff",
+    "model_label": "Gemini",
+    "topic": "Veganism",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "# Veganism Overview\n**Key Takeaways**\n* Veganism is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Veganism to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 184,
+    "timestamp": "2026-06-11T12:19:34.771817",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "a935b945-eaae-4c0c-85dd-ee741dc533ec",
+    "model_label": "Gemini",
+    "topic": "Mental health",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Mental health Overview\n**Key Takeaways**\n* Mental health is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Mental health to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771823",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "3c1d17fc-8252-4fef-933a-5da208a48905",
+    "model_label": "Gemini",
+    "topic": "Mental health",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "# Mental health Overview\n**Key Takeaways**\n* Mental health is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Mental health to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 30,
+    "char_count": 199,
+    "timestamp": "2026-06-11T12:19:34.771830",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "9965b077-7e7d-4ce6-b359-73ff0a51cd94",
+    "model_label": "Gemini",
+    "topic": "World War II",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "# World War II Overview\n**Key Takeaways**\n* World War II is vital.\n* Here is why it works.\n\n### Practical Applications\nUse World War II to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 33,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771838",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "749c778c-8d88-4d46-a625-d742fc83635e",
+    "model_label": "Gemini",
+    "topic": "Oceanography",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "# Oceanography Overview\n**Key Takeaways**\n* Oceanography is vital.\n* Here is why it works.\n\n### Practical Applications\nUse Oceanography to improve efficiency. It's comprehensive and authoritative.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.771844",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.8,
+      "bold_header_density": 0.9,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "cfa46f61-ad34-480d-bf39-87e2144329bc",
+    "model_label": "LLaMA",
+    "topic": "Digital marketing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Digital marketing is simple. You just do it. No need for complex words. Digital marketing is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.771853",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "86281809-c2c3-4404-be91-f4e8c9dc9caa",
+    "model_label": "LLaMA",
+    "topic": "Renewable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, Renewable energy is simple. You just do it. No need for complex words. Renewable energy is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 160,
+    "timestamp": "2026-06-11T12:19:34.771860",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "97c48025-d28d-4b30-b529-7615f7b84b8e",
+    "model_label": "LLaMA",
+    "topic": "Renewable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Renewable energy is simple. You just do it. No need for complex words. Renewable energy is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 160,
+    "timestamp": "2026-06-11T12:19:34.771866",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "922c7cfe-49b1-448a-ae49-7f8fe9333cdb",
+    "model_label": "LLaMA",
+    "topic": "Sustainable energy",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Sustainable energy is simple. You just do it. No need for complex words. Sustainable energy is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 164,
+    "timestamp": "2026-06-11T12:19:34.771872",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c7878581-c259-4949-8fc0-9dca3fc77da9",
+    "model_label": "LLaMA",
+    "topic": "Oceanography",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, Oceanography is simple. You just do it. No need for complex words. Oceanography is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771881",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "e18672d5-12d9-4a68-9686-98c1ceeb8a2c",
+    "model_label": "LLaMA",
+    "topic": "Sustainable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, Sustainable energy is simple. You just do it. No need for complex words. Sustainable energy is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 164,
+    "timestamp": "2026-06-11T12:19:34.771887",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "84cc2194-75a8-4861-9bc5-b704c0cd077e",
+    "model_label": "LLaMA",
+    "topic": "World War II",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, World War II is simple. You just do it. No need for complex words. World War II is going to change things fast. It's direct and gets to the point.",
+    "word_count": 31,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771894",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "d4e1e9de-448e-4080-932a-e918e63cb640",
+    "model_label": "LLaMA",
+    "topic": "The history of jazz",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, The history of jazz is simple. You just do it. No need for complex words. The history of jazz is going to change things fast. It's direct and gets to the point.",
+    "word_count": 33,
+    "char_count": 166,
+    "timestamp": "2026-06-11T12:19:34.771901",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "6f875f9f-497f-49bd-b5e3-eefbcd380e5f",
+    "model_label": "LLaMA",
+    "topic": "The history of jazz",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, The history of jazz is simple. You just do it. No need for complex words. The history of jazz is going to change things fast. It's direct and gets to the point.",
+    "word_count": 33,
+    "char_count": 166,
+    "timestamp": "2026-06-11T12:19:34.771908",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "7ef679c0-63a0-462b-be53-0782bc408b12",
+    "model_label": "LLaMA",
+    "topic": "Human evolution",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, Human evolution is simple. You just do it. No need for complex words. Human evolution is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 158,
+    "timestamp": "2026-06-11T12:19:34.771914",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "86308d75-2594-4540-b6cd-ac6f2428d5dd",
+    "model_label": "LLaMA",
+    "topic": "Sustainable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, Sustainable energy is simple. You just do it. No need for complex words. Sustainable energy is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 164,
+    "timestamp": "2026-06-11T12:19:34.771920",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "afe197e1-0aa5-4e92-8443-bd176393109e",
+    "model_label": "LLaMA",
+    "topic": "World War II",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, World War II is simple. You just do it. No need for complex words. World War II is going to change things fast. It's direct and gets to the point.",
+    "word_count": 31,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771927",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f22b6dcd-ad78-4b1a-a475-78df29e3842d",
+    "model_label": "LLaMA",
+    "topic": "Cybersecurity",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, Cybersecurity is simple. You just do it. No need for complex words. Cybersecurity is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 154,
+    "timestamp": "2026-06-11T12:19:34.771934",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f334b106-c2d1-4788-a0ee-597dcbd7f1ab",
+    "model_label": "LLaMA",
+    "topic": "Oceanography",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, Oceanography is simple. You just do it. No need for complex words. Oceanography is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771940",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "407662c6-8921-4f5b-97d5-3c5333a0af6d",
+    "model_label": "LLaMA",
+    "topic": "Oceanography",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Oceanography is simple. You just do it. No need for complex words. Oceanography is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771947",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "783dc9fe-b114-4fad-8192-b4fb996ab1a8",
+    "model_label": "LLaMA",
+    "topic": "Quantum computing",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, Quantum computing is simple. You just do it. No need for complex words. Quantum computing is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.771954",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "968cdaf5-6f0c-42fe-9312-1ee4122d3d92",
+    "model_label": "LLaMA",
+    "topic": "Ancient Rome",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Ancient Rome is simple. You just do it. No need for complex words. Ancient Rome is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771960",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "1cd4b0db-8039-4be7-b58e-283b759f8372",
+    "model_label": "LLaMA",
+    "topic": "Digital marketing",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, Digital marketing is simple. You just do it. No need for complex words. Digital marketing is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.771966",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c24e02f3-ee78-4c7d-ac95-ef379c5b54b3",
+    "model_label": "LLaMA",
+    "topic": "Quantum computing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Quantum computing is simple. You just do it. No need for complex words. Quantum computing is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.771972",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f16e226f-6f68-454e-850a-0271ce21164a",
+    "model_label": "LLaMA",
+    "topic": "Oceanography",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Oceanography is simple. You just do it. No need for complex words. Oceanography is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771978",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "bc8d0829-0464-4b86-93f6-e7383da6741a",
+    "model_label": "LLaMA",
+    "topic": "Baking a cake",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, Baking a cake is simple. You just do it. No need for complex words. Baking a cake is going to change things fast. It's direct and gets to the point.",
+    "word_count": 31,
+    "char_count": 154,
+    "timestamp": "2026-06-11T12:19:34.771985",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "7618d0e5-d6c1-4a8c-a634-06bdea2987a5",
+    "model_label": "LLaMA",
+    "topic": "The history of jazz",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, The history of jazz is simple. You just do it. No need for complex words. The history of jazz is going to change things fast. It's direct and gets to the point.",
+    "word_count": 33,
+    "char_count": 166,
+    "timestamp": "2026-06-11T12:19:34.771993",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "332ed5ea-2aad-4ff4-9124-601001de5210",
+    "model_label": "LLaMA",
+    "topic": "World War II",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Look, World War II is simple. You just do it. No need for complex words. World War II is going to change things fast. It's direct and gets to the point.",
+    "word_count": 31,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.771999",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "acc31b03-0377-466a-ab37-c13a1380b210",
+    "model_label": "LLaMA",
+    "topic": "Veganism",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Veganism is simple. You just do it. No need for complex words. Veganism is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 144,
+    "timestamp": "2026-06-11T12:19:34.772007",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "36070c40-983b-46d6-a1d6-42f5604976b8",
+    "model_label": "LLaMA",
+    "topic": "The history of jazz",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Look, The history of jazz is simple. You just do it. No need for complex words. The history of jazz is going to change things fast. It's direct and gets to the point.",
+    "word_count": 33,
+    "char_count": 166,
+    "timestamp": "2026-06-11T12:19:34.772015",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "282c59d3-95a5-47fa-8353-54b28e4e6252",
+    "model_label": "LLaMA",
+    "topic": "Python programming",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, Python programming is simple. You just do it. No need for complex words. Python programming is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 164,
+    "timestamp": "2026-06-11T12:19:34.772021",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "9c5a46e6-3024-4c42-b37e-ada26be2b464",
+    "model_label": "LLaMA",
+    "topic": "Space exploration",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Space exploration is simple. You just do it. No need for complex words. Space exploration is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.772027",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "183b1f22-99ec-4b9c-92ec-7b628fe03d94",
+    "model_label": "LLaMA",
+    "topic": "World War II",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, World War II is simple. You just do it. No need for complex words. World War II is going to change things fast. It's direct and gets to the point.",
+    "word_count": 31,
+    "char_count": 152,
+    "timestamp": "2026-06-11T12:19:34.772035",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "00ff38b6-42e2-4201-aa69-71e850c78f1c",
+    "model_label": "LLaMA",
+    "topic": "Blockchain",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Look, Blockchain is simple. You just do it. No need for complex words. Blockchain is going to change things fast. It's direct and gets to the point.",
+    "word_count": 27,
+    "char_count": 148,
+    "timestamp": "2026-06-11T12:19:34.772042",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "748d7cc8-1bdd-4c3f-af69-de55f6ea3c9d",
+    "model_label": "LLaMA",
+    "topic": "Quantum computing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Look, Quantum computing is simple. You just do it. No need for complex words. Quantum computing is going to change things fast. It's direct and gets to the point.",
+    "word_count": 29,
+    "char_count": 162,
+    "timestamp": "2026-06-11T12:19:34.772048",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "fa25e689-04a2-4048-9602-dd57a797c222",
+    "model_label": "Mistral",
+    "topic": "Architecture",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Architecture represents a technical challenge within the European academic framework. The efficiency of Architecture is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772057",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "21af83a2-cd3b-43bb-9b6e-a895197b9d6d",
+    "model_label": "Mistral",
+    "topic": "Python programming",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Python programming represents a technical challenge within the European academic framework. The efficiency of Python programming is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772065",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "614b0bb3-9d1d-4fd3-ae14-05c33f66b4e2",
+    "model_label": "Mistral",
+    "topic": "Philosophy of mind",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Philosophy of mind represents a technical challenge within the European academic framework. The efficiency of Philosophy of mind is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772071",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c20e7f82-a97f-40f8-9d36-3fcc54219b7f",
+    "model_label": "Mistral",
+    "topic": "Baking a cake",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Baking a cake represents a technical challenge within the European academic framework. The efficiency of Baking a cake is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772078",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "4f617787-580f-4b85-9b21-423f060781ee",
+    "model_label": "Mistral",
+    "topic": "Climate change",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Climate change represents a technical challenge within the European academic framework. The efficiency of Climate change is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 200,
+    "timestamp": "2026-06-11T12:19:34.772084",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "fb845ca6-c0a0-4a08-849d-988a298ff588",
+    "model_label": "Mistral",
+    "topic": "Machine learning",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Machine learning represents a technical challenge within the European academic framework. The efficiency of Machine learning is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 204,
+    "timestamp": "2026-06-11T12:19:34.772091",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "9049ed2d-aebb-4e23-929e-5f4096bb77fc",
+    "model_label": "Mistral",
+    "topic": "Sustainable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Sustainable energy represents a technical challenge within the European academic framework. The efficiency of Sustainable energy is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772097",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "e7dae847-dbc2-49e5-9d04-1fb9b943c77b",
+    "model_label": "Mistral",
+    "topic": "Cybersecurity",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Cybersecurity represents a technical challenge within the European academic framework. The efficiency of Cybersecurity is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772103",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f055098a-4254-40a2-92f8-a32aff49fafc",
+    "model_label": "Mistral",
+    "topic": "Sustainable energy",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Sustainable energy represents a technical challenge within the European academic framework. The efficiency of Sustainable energy is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772110",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "5eb1f215-eb99-47f7-bc56-1cdd0b3e26d6",
+    "model_label": "Mistral",
+    "topic": "Baking a cake",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Baking a cake represents a technical challenge within the European academic framework. The efficiency of Baking a cake is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772118",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "d540c138-b151-452c-a20d-13aa107b9d30",
+    "model_label": "Mistral",
+    "topic": "Cybersecurity",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Cybersecurity represents a technical challenge within the European academic framework. The efficiency of Cybersecurity is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772124",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "978c5a26-c463-479a-8b1e-f1bbcbe44367",
+    "model_label": "Mistral",
+    "topic": "Climate change",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Climate change represents a technical challenge within the European academic framework. The efficiency of Climate change is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 200,
+    "timestamp": "2026-06-11T12:19:34.772130",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "73a66a0a-2818-4ca3-b2cf-be3016cf8270",
+    "model_label": "Mistral",
+    "topic": "Baking a cake",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Baking a cake represents a technical challenge within the European academic framework. The efficiency of Baking a cake is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772136",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "adf58e7b-4faa-490c-a068-7d24aff0138e",
+    "model_label": "Mistral",
+    "topic": "Sustainable energy",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Sustainable energy represents a technical challenge within the European academic framework. The efficiency of Sustainable energy is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772143",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "0ff50673-e808-42e5-a94a-3fa670996016",
+    "model_label": "Mistral",
+    "topic": "Mental health",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Mental health represents a technical challenge within the European academic framework. The efficiency of Mental health is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772149",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "81114ca5-27d8-4ed5-9829-8547c22978a9",
+    "model_label": "Mistral",
+    "topic": "Climate change",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Climate change represents a technical challenge within the European academic framework. The efficiency of Climate change is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 200,
+    "timestamp": "2026-06-11T12:19:34.772157",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "0566e4e8-69fe-4a72-8ee5-9f12e1ac50d2",
+    "model_label": "Mistral",
+    "topic": "World War II",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "World War II represents a technical challenge within the European academic framework. The efficiency of World War II is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772163",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "49c1dce3-d386-4592-8dd9-d12c2699e73d",
+    "model_label": "Mistral",
+    "topic": "Veganism",
+    "text_type": "Opinion",
+    "length_target": "Medium",
+    "text": "Veganism represents a technical challenge within the European academic framework. The efficiency of Veganism is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 188,
+    "timestamp": "2026-06-11T12:19:34.772170",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c62f0c75-d9a9-4871-9447-a04fdf04485d",
+    "model_label": "Mistral",
+    "topic": "Python programming",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Python programming represents a technical challenge within the European academic framework. The efficiency of Python programming is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772178",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "135b5cd7-c188-4d57-b1a9-0433e4f63d65",
+    "model_label": "Mistral",
+    "topic": "Blockchain",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Blockchain represents a technical challenge within the European academic framework. The efficiency of Blockchain is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 192,
+    "timestamp": "2026-06-11T12:19:34.772187",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "5943bdb2-a56d-4e6b-9762-e59ee1bea082",
+    "model_label": "Mistral",
+    "topic": "Oceanography",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Oceanography represents a technical challenge within the European academic framework. The efficiency of Oceanography is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772193",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "5ace92a1-2ddf-47fb-9663-9b4065a88bcd",
+    "model_label": "Mistral",
+    "topic": "Cybersecurity",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Cybersecurity represents a technical challenge within the European academic framework. The efficiency of Cybersecurity is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772199",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "12578547-d205-48be-8ed1-a13331ebaecd",
+    "model_label": "Mistral",
+    "topic": "Sustainable energy",
+    "text_type": "Essay",
+    "length_target": "Medium",
+    "text": "Sustainable energy represents a technical challenge within the European academic framework. The efficiency of Sustainable energy is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772205",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "70e4e0a8-cea2-4a17-ba1a-580d1d4319fe",
+    "model_label": "Mistral",
+    "topic": "Oceanography",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Oceanography represents a technical challenge within the European academic framework. The efficiency of Oceanography is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772211",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "c88bdaaf-e041-4824-82fd-3bfb57666345",
+    "model_label": "Mistral",
+    "topic": "Oceanography",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Oceanography represents a technical challenge within the European academic framework. The efficiency of Oceanography is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772217",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "1c23956c-aa00-4b70-8f9a-60222100d9e2",
+    "model_label": "Mistral",
+    "topic": "Architecture",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Architecture represents a technical challenge within the European academic framework. The efficiency of Architecture is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772223",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "077f96ca-fdfe-42bb-a18e-30722db62b3a",
+    "model_label": "Mistral",
+    "topic": "Baking a cake",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Baking a cake represents a technical challenge within the European academic framework. The efficiency of Baking a cake is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 31,
+    "char_count": 198,
+    "timestamp": "2026-06-11T12:19:34.772229",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "f7015a1b-9bea-4605-9293-dfd43fc852b7",
+    "model_label": "Mistral",
+    "topic": "Digital marketing",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Digital marketing represents a technical challenge within the European academic framework. The efficiency of Digital marketing is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 206,
+    "timestamp": "2026-06-11T12:19:34.772236",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "6a9e0348-799e-4cd2-8085-08db8ea11feb",
+    "model_label": "Mistral",
+    "topic": "Oceanography",
+    "text_type": "Technical",
+    "length_target": "Medium",
+    "text": "Oceanography represents a technical challenge within the European academic framework. The efficiency of Oceanography is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 27,
+    "char_count": 196,
+    "timestamp": "2026-06-11T12:19:34.772243",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  },
+  {
+    "id": "efb80f30-0b19-41d8-8fde-4e18828d39ed",
+    "model_label": "Mistral",
+    "topic": "Python programming",
+    "text_type": "Creative",
+    "length_target": "Medium",
+    "text": "Python programming represents a technical challenge within the European academic framework. The efficiency of Python programming is documented. It assumes a high level of prerequisite knowledge in the reader.",
+    "word_count": 29,
+    "char_count": 208,
+    "timestamp": "2026-06-11T12:19:34.772251",
+    "features": {
+      "em_dash_rate": 0.1,
+      "bullet_density": 0.1,
+      "bold_header_density": 0.1,
+      "mean_sentence_length": 15,
+      "oxford_comma_rate": 0.2
+    }
+  }
+]

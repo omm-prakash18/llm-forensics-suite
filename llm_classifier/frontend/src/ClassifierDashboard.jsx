@@ -11,11 +11,11 @@ const SAMPLES = [
 ];
 
 const MODEL_COLORS = {
-  'GPT-4': '#10a37f',
-  'Claude': '#7c5cfc',
-  'Gemini': '#4285f4',
-  'LLaMA': '#ff6b35',
-  'Mistral': '#f7c948'
+  'GPT-4': '#b8f5a0',
+  'Claude': '#d4b0ff',
+  'Gemini': '#94c7ff',
+  'LLaMA': '#ffaa6b',
+  'Mistral': '#ffe07a'
 };
 
 const ClassifierDashboard = () => {
@@ -29,7 +29,7 @@ const ClassifierDashboard = () => {
   const wordCount = text.trim().split(/\s+/).filter(w => w).length;
 
   const handleClassify = async () => {
-    if (!text.trim()) {
+    if (wordCount < 30) {
       setShake(true);
       setTimeout(() => setShake(false), 500);
       return;
@@ -39,7 +39,7 @@ const ClassifierDashboard = () => {
     setResult(null);
     setError('');
 
-    const messages = ["Extracting lexical signals...", "Analyzing syntax...", "Scoring patterns..."];
+    const messages = ["Extracting lexical signals...", "Analyzing syntax...", "Scoring stylometric patterns...", "Consulting model..."];
     for (let msg of messages) {
       setLoadingMsg(msg);
       await new Promise(r => setTimeout(r, 600));
@@ -59,7 +59,13 @@ const ClassifierDashboard = () => {
         correct: null
       };
       const savedHistory = JSON.parse(localStorage.getItem('llm_forensics_history') || '[]');
-      localStorage.setItem('llm_forensics_history', JSON.stringify([historyItem, ...savedHistory].slice(0, 100)));
+      try {
+        localStorage.setItem('llm_forensics_history', JSON.stringify([historyItem, ...savedHistory].slice(0, 100)));
+      } catch (e) {
+        if (e.name === 'QuotaExceededError') {
+          localStorage.setItem('llm_forensics_history', JSON.stringify([historyItem, ...savedHistory].slice(0, 90)));
+        }
+      }
       
       // Dispatch event for Signal Explainer
       window.dispatchEvent(new CustomEvent('llm_classification_complete', { detail: res.data }));
@@ -101,25 +107,25 @@ const ClassifierDashboard = () => {
             <textarea 
               className="glass-input" 
               style={{ minHeight: '300px', resize: 'vertical', width: '100%', boxSizing: 'border-box' }}
-              placeholder="Paste text (min 50 words)..."
+              placeholder="Paste text (min 30 words)..."
               value={text}
               onChange={(e) => setText(e.target.value)}
             />
             
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '1rem', alignItems: 'center' }}>
-              <div style={{ fontSize: '0.85rem', color: wordCount < 50 ? '#ff6b35' : 'var(--text-secondary)' }}>
-                {wordCount} words {wordCount < 50 && "(Min 50 for accuracy)"}
+              <div style={{ fontSize: '0.85rem', color: wordCount < 30 ? '#ff6b35' : 'var(--text-secondary)' }}>
+                {wordCount} words {wordCount < 30 && "(Min 30 for accuracy)"}
               </div>
-              <button className="glass-button" style={{ background: 'var(--accent-primary)', color: '#fff', border: 'none', padding: '0.75rem 2rem' }} onClick={handleClassify} disabled={loading}>
+              <button className="glass-button" style={{ background: 'rgba(255, 253, 242, 0.12)', color: 'var(--cream)', border: '1px solid rgba(255,253,242,0.25)', padding: '0.75rem 2rem' }} onClick={handleClassify} disabled={loading || wordCount < 30}>
                 {loading ? <Activity size={18} className="animate-spin" /> : <Zap size={18} />}
-                Classify
+                {loading ? 'Analyzing...' : 'Analyze Signature'}
               </button>
             </div>
           </motion.div>
 
           <AnimatePresence>
             {error && (
-              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="glass-panel" style={{ borderColor: '#ff6b35', padding: '1rem', color: '#ff6b35', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+              <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="glass-panel" style={{ borderColor: 'rgba(255,170,107,0.5)', padding: '1rem', color: 'var(--accent-llama)', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
                 <AlertCircle size={18} /> {error}
               </motion.div>
             )}
@@ -146,11 +152,18 @@ const ClassifierDashboard = () => {
 
             {result && (
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
+                <div style={{ textAlign: 'center', marginBottom: '1.5rem' }}>
                   <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>Likely Source</div>
                   <h1 style={{ color: MODEL_COLORS[result.winner] || 'var(--accent-primary)', fontSize: '3rem', margin: 0 }}>{result.winner}</h1>
                   <div style={{ fontSize: '1.5rem', fontWeight: 700 }}>{(result.confidence * 100).toFixed(0)}% <span style={{ fontSize: '1rem', opacity: 0.5 }}>confidence</span></div>
                 </div>
+
+                {result.confidence < 0.5 && (
+                  <div style={{ background: 'rgba(255, 224, 122, 0.08)', border: '1px solid rgba(255, 224, 122, 0.3)', padding: '0.75rem', borderRadius: '8px', marginBottom: '1.5rem', fontSize: '0.75rem', color: 'var(--accent-mistral)', display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
+                    <AlertCircle size={14} style={{ flexShrink: 0 }} />
+                    Low confidence — text may be too short or genuinely ambiguous.
+                  </div>
+                )}
 
                 <div style={{ marginBottom: '2rem' }}>
                   {Object.entries(result.scores).sort((a,b) => b[1] - a[1]).map(([model, score]) => (
@@ -159,8 +172,8 @@ const ClassifierDashboard = () => {
                         <span>{model}</span>
                         <span>{(score*100).toFixed(1)}%</span>
                       </div>
-                      <div style={{ height: '6px', background: 'rgba(255,255,255,0.05)', borderRadius: '3px', overflow: 'hidden' }}>
-                        <motion.div initial={{ width: 0 }} animate={{ width: `${score*100}%` }} style={{ height: '100%', background: MODEL_COLORS[model] }} />
+                      <div style={{ height: '6px', background: 'rgba(255,253,242,0.04)', borderRadius: '3px', overflow: 'hidden' }}>
+                        <motion.div initial={{ width: 0 }} animate={{ width: `${score*100}%` }} transition={{ duration: 0.6 }} style={{ height: '100%', background: MODEL_COLORS[model] }} />
                       </div>
                     </div>
                   ))}
@@ -170,12 +183,12 @@ const ClassifierDashboard = () => {
                   <div style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', marginBottom: '0.75rem' }}>Key Signals</div>
                   <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                     {result.top_signals.map(s => (
-                      <span key={s} style={{ fontSize: '0.7rem', background: 'rgba(255,255,255,0.05)', padding: '0.25rem 0.5rem', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>{s}</span>
+                      <span key={s} style={{ fontSize: '0.7rem', background: 'rgba(255,253,242,0.05)', padding: '0.25rem 0.5rem', borderRadius: '6px', border: '1px solid rgba(255,253,242,0.1)' }}>{s}</span>
                     ))}
                   </div>
                 </div>
 
-                <div className="glass-panel" style={{ padding: '0.75rem', background: 'rgba(255,255,255,0.02)', fontSize: '0.85rem', lineHeight: 1.5 }}>
+                <div className="glass-panel" style={{ padding: '0.75rem', background: 'rgba(255,253,242,0.02)', fontSize: '0.85rem', lineHeight: 1.5 }}>
                   {result.reasoning}
                 </div>
               </motion.div>

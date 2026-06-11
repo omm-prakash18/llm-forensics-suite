@@ -18,7 +18,7 @@ const CurveLoops = () => {
     resize();
 
     const draw = () => {
-      ctx.fillStyle = 'rgba(9, 9, 11, 0.1)'; // Fade effect for trails
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.12)'; // Fade effect for trails
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       
       const cx = canvas.width / 2;
@@ -31,9 +31,9 @@ const CurveLoops = () => {
         const t = time + i * Math.PI / 2;
         ctx.beginPath();
         
-        // Colors from our design system
-        const colors = ['#8b5cf6', '#d946ef', '#3b82f6', '#10b981'];
-        ctx.strokeStyle = colors[i] + '40'; // 25% opacity
+        // Colors — cream variants on black
+        const colors = ['rgba(255,253,242,0.9)', 'rgba(255,253,242,0.5)', 'rgba(255,253,242,0.3)', 'rgba(255,253,242,0.15)'];
+        ctx.strokeStyle = colors[i]; // cream opacity already baked in
         
         for (let a = 0; a < Math.PI * 2; a += 0.05) {
           const radius = 200 + Math.sin(a * 3 + t) * 100 + Math.cos(a * 2 - t) * 50;
@@ -73,7 +73,7 @@ const CurveLoops = () => {
         height: '100vh',
         zIndex: -1,
         pointerEvents: 'none',
-        background: '#09090b'
+        background: '#000000'
       }}
     />
   );
